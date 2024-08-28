@@ -5,7 +5,7 @@ export const FirstApp = ({title, subtitle, name}) => {
     if(!title) throw new Error('Title not exist')
   return (
     <>
-     <h2>{ title}</h2>
+     <h2 data-testid="test-title">{ title}</h2>
      <p>{subtitle}</p>
       <p>{name}</p>
     </>
