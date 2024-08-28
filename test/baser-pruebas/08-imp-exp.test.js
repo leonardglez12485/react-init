@@ -60,4 +60,16 @@ describe('08-impo-exp', ()=>{
          expect(heroe).toEqual([]);
     })
 
+    test('getHeroesByOwner most return undefined if owner not existe', ()=>{
+      const owner = 'DC';
+         const heroe = getHeroesByOwner(owner);
+         expect(heroe).toHaveLength(3);
+    })
+
+    test('getHeroesByOwner most return undefined if owner not existe', ()=>{
+      const owner = 'Marvel';
+         const heroe = getHeroesByOwner(owner);
+         expect(heroe).toHaveLength(2);
+    })
+
 })
