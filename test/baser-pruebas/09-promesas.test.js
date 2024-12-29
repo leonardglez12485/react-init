@@ -4,7 +4,7 @@ describe('09-pomesas', ()=>{
     test('should return am heroe', (done)=>{
         const id = 1;
         getHeroeByIdAsync(id)
-             .then(heroe=>{
+          .then(heroe=>{
 
             expect(heroe).toEqual( {
                 id: 1,
@@ -12,7 +12,7 @@ describe('09-pomesas', ()=>{
                 owner: 'DC'
             })
                 done(); 
-             })
+          })
     });
 
     test('should return an error if heroe not exist', (done)=>{
